@@ -74,20 +74,6 @@ Object storage is managed differently than block and file storage, since it is n
 TIDE object storage is [S3-compatible](https://en.wikipedia.org/wiki/Amazon_S3#S3_API_and_competing_services){:target="_blank"}, so there are many tools that may be used to manage TIDE object storage.
 TIDE block storage, being S3-compatible, organizes storage into buckets.
 
-### Checking Usage
-The National Research Platform (NRP) provides a useful [storage page](https://portal.nrp-nautilus.io/storage){:target="_blank"} that provides a high-level view of the object storage use for TIDE.
-This information is updated about once every 24 hours, so there may be a delay.
-You can check when the information was last updated using the "LastChecked" column.
-
-![TIDE S3 storage usage in terms of gigabytes used by individual buckets](/images/storage-services/managing-storage-1.png)
-
-To access this information follow these steps:
-1. Navigate to the [storage page](https://portal.nrp-nautilus.io/storage){:target="_blank"}
-1. Sign in using your single sign-on credentials
-1. Click the "Pool" drop down and select "TIDE S3"
-1. Click the tidesupport user
-1. Peruse the object storage buckets and storage consumption
-
 ### Using Rclone
 [Rclone](https://rclone.org/) is a popular command line tool that offers file transfer support for several cloud providers.
 We recommend it here as it supports S3-compatible storage providers like TIDE's Ceph object store.
@@ -148,11 +134,11 @@ This text guide may be supplemented with this [recording for configuring Rclone]
     - *Note*: You may not get any output, this just means that your bucket is empty
 
 ### Common Rclone Commands
-After configuring Rclone for TIDE object storage, you can use the following commands to transfer and interact with files.
+After configuring Rclone for TIDE object storage, you can use various commands to transfer, interact with files, and interact with the bucket itself. Below are a few to help you get started with the basic operations of rclone.
 This text guide may be supplemented with this recording for [how to use rclone](https://drive.google.com/file/d/1nNFGQrpAgnB3NPiKCJZJ1v4rgdrlhnXT/view?usp=sharing){:target="_blank"}.
 For a full list of available Rclone commands, please see the [official rclone commands](https://rclone.org/commands/){:target="_blank"} page.
 
-#### Checking Endpoints
+#### **Checking Endpoints**
 You can check your configured remotes in Rclone.
 Your endpoints are destinations that you can transfer files to and from.
 
@@ -182,7 +168,7 @@ e/n/d/r/c/s/q>
 
 You can exit this command by typing `q` and hitting enter.
 
-#### Listing Directories and Files
+#### **Listing Directories and Files**
 You can list all of the directories in your bucket.
 
 Example command:
@@ -213,7 +199,7 @@ Example output:
 ```
 - *Note*: The numbers in the first column are the file sizes in bytes 
 
-#### Copying Directories and Files
+#### **Copying Directories and Files**
 You can copy individual files to or from your bucket.
 
 Example command:
@@ -247,7 +233,7 @@ Example output:
 ```
 - *Note*: If you see output, please check it as it may indicate an error
 
-#### Removing Directories and Files
+#### **Removing Directories and Files**
 You can remove files from your bucket.
 
 Example command:
@@ -277,3 +263,28 @@ Example output:
 <blank>
 ```
 - *Note*: If you see output, please check it as it may indicate an error
+
+#### **Checking Usage**
+You can check the usage of your entire bucket using the rclone size command. 
+
+Example command:
+```bash
+rclone size s3:bucket --fast-list
+```
+Example output:
+```bash
+Total objects: 16
+Total size: 1.185 MiB (1242556 Byte)
+```
+
+You can also check the usage of subdirectories inside of your bucket using by adding the path to the size command.
+
+Example command:
+```bash
+rclone size s3:bucket/path/to/subdir --fast-list
+```
+Example output:
+```bash
+Total objects: 1
+Total size: 0.185 MiB (193986 Byte)
+```
