@@ -13,7 +13,7 @@ permalink: /usage-guidelines/resource-monitoring
 This guide will walk you through determining how many resources you should request, what resources are available, and how to monitor your resource consumption once running.
 Once you have completed this guide you should be able to:
 - Determine the resources you should be requesting
-- View available resources on the [Nautilus portal](https://portal.nrp-nautilus.io/resources){:target="_blank"}
+- View available resources on the [Nautilus portal](https://nrp.ai){:target="_blank"}
 - View the CPU and GPU resources you are consuming on Grafana
 
 ## Prerequisites
@@ -23,7 +23,7 @@ This documentation assumes that you have:
 
 ## Minimum, average, and maximum resource usage
 
-All software requires _some_ computer hardware resources to run properly. Since the computer hardware in the cluster is a finite resource, it's extremely important to request only the resources that your application needs. If your request is too large, it may not be scheduled on the cluster; too small, and your application may not run properly. Determining the correct resource request requires a good understanding of your applications' [minimum](#minimum-resource-usage) and [average](#averageruntime-resource-usage) resource consumption. More details can be found on [Nautilus' memory allocation policies](https://docs.nationalresearchplatform.org/userdocs/start/policies/#memory-allocation){:target="_blank"}. 
+All software requires _some_ computer hardware resources to run properly. Since the computer hardware in the cluster is a finite resource, it's extremely important to request only the resources that your application needs. If your request is too large, it may not be scheduled on the cluster; too small, and your application may not run properly. Determining the correct resource request requires a good understanding of your applications' [minimum](#minimum-resource-usage) and [average](#averageruntime-resource-usage) resource consumption. More details can be found on [Nautilus' memory allocation policies](https://nrp.ai/documentation/userdocs/start/policies/#resource-allocation){:target="_blank"}. 
 
 ### Minimum resource usage
 
@@ -49,14 +49,14 @@ How do you know if your application needs a GPU? CPUs are great for general purp
 
 ## Available resources on Nautilus
 
-Nautilus provides a [resources](https://portal.nrp-nautilus.io/resources){:target="_blank"} page that outlines all of the nodes in the cluster and their available resources. 
+Nautilus provides a [resources](https://nrp.ai/viz/resources/){:target="_blank"} page that outlines all of the nodes in the cluster and their available resources. 
 A node is another word to describe the computer that the servers are running on, with each row in the table corresponding to a node in the Nautilus cluster. 
 If the resources you are requesting are not available, then your job or notebook may not schedule. You can use this resources page to see what is schedulable in real-time.
 
 {: .note }
 The true CPU count you can reserve will be 2 less than what is shown, this is because each node reserves 2 CPUs for [batch jobs](/batch-jobs/) with partial CPU requests. Available RAM and GPU will be exactly as listed. 
 
-1. Navigate to [https://portal.nrp-nautilus.io/](https://portal.nrp-nautilus.io/){:target="_blank"}.
+1. Navigate to [https://portal.nrp-nautilus.io/](https://nrp.ai/){:target="_blank"}.
 1. Click on the Resources tab.
   - ![Nautilus homepage](/images/usage-guidelines/resourcemonitoring1.png)
 1. Notice the table is filled with _all_ nodes in the cluster, refine your results by putting `rci-tide` in the Name entry section.
@@ -89,7 +89,7 @@ SDSU Research JupyterHub | sdsu-rci-jh | jupyter-[SDSUid-prefix]-40sdsu-2eedu | 
 1. Scroll down slightly and find your pod name in the box highlighted red, you may need to scroll or sort alphabetically to help your search. Selecting your pod name will take you to a page that only contains your pods information.
   - ![Grafana pod selection](/images/usage-guidelines/resourcemonitoring_cpu3.png)
 
-For more information, including documentation on determining usage with Tensorboard, see [Nautilus' monitoring documentation](https://docs.nationalresearchplatform.org/userdocs/running/monitoring/){:target="_blank"}.
+For more information, including documentation on determining usage with Tensorboard, see [Nautilus' monitoring documentation](https://nrp.ai/documentation/userdocs/running/monitoring/){:target="_blank"}.
 
 ### Monitoring GPU consumtion
 1. Navigate to the Nautlius [GPU dashboard](https://grafana.nrp-nautilus.io/d/dRG9q0Ymz/k8s-compute-resources-namespace-gpus?orgId=1&from=now-30m&to=now&timezone=browser&refresh=30s){:target="_blank"}
