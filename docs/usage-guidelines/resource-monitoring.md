@@ -58,12 +58,12 @@ The true CPU count you can reserve will be 2 less than what is shown, this is be
 
 1. Navigate to [https://portal.nrp-nautilus.io/](https://nrp.ai/){:target="_blank"}.
 1. Click on the Resources tab.
-  - ![Nautilus homepage](/images/usage-guidelines/resourcemonitoring1.png)
+  - ![Nautilus homepage](/images/usage-guidelines/resourcemonitoring1-new.png)
 1. Notice the table is filled with _all_ nodes in the cluster, refine your results by putting `rci-tide` in the Name entry section.
-  - ![Nautilus resources tab with name search](/images/usage-guidelines/resourcemonitoring2.png)
+  - ![Nautilus resources tab with name search](/images/usage-guidelines/resourcemonitoring2-new.png)
 1. You can check the amount of CPU, GPU, and memory resources available by sorting the respective column that you're looking for. In general, GPUs are in the highest demand, CPUs in the middle, and memory in the least demand.
   - Sorting the available resources by GPU:
-  - ![Nautilus resources sorted by GPU](/images/usage-guidelines/resourcemonitoring3.png)
+  - ![Nautilus resources sorted by GPU](/images/usage-guidelines/resourcemonitoring3-new.png)
 
 ## Monitoring resource consumption with Grafana
 
