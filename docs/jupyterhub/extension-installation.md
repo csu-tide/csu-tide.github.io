@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Extension Installation
+title: Installing JupyterHub Extensions
 parent: JupyterHub
 nav_order: 7
 has_children: false
@@ -8,7 +8,7 @@ description: ""
 permalink: /jupyterhub/extension-installation
 ---
 
-# Extension Installation
+# Installing JupyterHub Extensions
 This documentation will guide you through how to search for extensions, install and uninstall them. At the end there is an 
 
 within the JupyterHub environment.
@@ -33,7 +33,7 @@ Additionally, under the dropdown menu titled "Installed," you can see all the ex
 ```bash
 pip install --user [extension-name]
 ```
-This installs the extension into the **/home/jovyan/** directory, where it can persist, or not be erased when you restart your notebook.
+This installs the extension into the **/home/jovyan/** directory, where it can persist, as restarting your notebook will erase software not installed in that directory.
 
 
 ### Checking that the Extension is Installed
@@ -50,12 +50,12 @@ Another way to check that the extension is installed properly is by running the 
 ```bash
 find ~ -name "[extension-name]"
 ```
-This command will search for the extension in your home directory /home/jovyan/, represented by the tilde (~). If you don't receive any output, then the extension isn't installed or isn't installed in your home directory. <br><br>
+This command will search for the extension in your home directory **/home/jovyan/**, represented by the tilde (~). If you don't receive any output, then the extension isn't installed or isn't installed in your home directory. <br><br>
 
 
 ## How to Remove an Extension
 
-To uninstall an extension that was installed on your PVC, i.e., in your home directory, use the following command:
+To uninstall an extension that was installed on your PVC, i.e., in your home directory **/home/jovyan/**, use the following command:
 
 ```bash
 pip uninstall [extension-name] -y
