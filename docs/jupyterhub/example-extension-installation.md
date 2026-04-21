@@ -81,7 +81,7 @@ and
 pkill ollama
 ```
 
-3) Uninstall the extension using the command below:
+3) If you want to remove the extension as well, use the command below:
 
 ```bash
 pip uninstall jupyterlab-nvdashboard -y

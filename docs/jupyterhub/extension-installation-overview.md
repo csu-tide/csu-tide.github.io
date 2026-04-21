@@ -53,7 +53,7 @@ This command will search for the extension in your home directory **/home/jovyan
 
 ## How to Remove an Extension
 
-To uninstall an extension that was installed on your PVC, i.e., in your home directory **/home/jovyan/**, use the following command:
+If you decide to uninstall an extension installed on your PVC, i.e., your home directory **/home/jovyan/**, you can use the following command:
 
 ```bash
 pip uninstall [extension-name] -y
