@@ -56,9 +56,7 @@ If the resources you are requesting are not available, then your job or notebook
 {: .note }
 The true CPU count you can reserve will be 2 less than what is shown, this is because each node reserves 2 CPUs for [batch jobs](/batch-jobs/) with partial CPU requests. Available RAM and GPU will be exactly as listed. 
 
-1. Navigate to [https://portal.nrp-nautilus.io/](https://nrp.ai/){:target="_blank"}.
-1. Click on the Resources tab.
-  - ![Nautilus homepage](/images/usage-guidelines/resourcemonitoring1-new.png)
+1. Navigate to [https://nrp.ai/viz/resources/](https://nrp.ai/viz/resources/){:target="_blank"}.
 1. Notice the table is filled with _all_ nodes in the cluster, refine your results by putting `rci-tide` in the Name entry section.
   - ![Nautilus resources tab with name search](/images/usage-guidelines/resourcemonitoring2-new.png)
 1. You can check the amount of CPU, GPU, and memory resources available by sorting the respective column that you're looking for. In general, GPUs are in the highest demand, CPUs in the middle, and memory in the least demand.
