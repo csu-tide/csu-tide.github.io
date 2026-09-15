@@ -26,15 +26,15 @@ The NRP portal will automatically create you an account once you login with your
 1. Click Log On
   - ![Log on](/images/batch-jobs/gettingaccess5.png)
 1. You will be greeted by a login page
-  - ![Institution Login page](/images/batch-jobs/gettingaccess6.png)
+  - ![Institution Login page](/images/batch-jobs/getting-access-img-step-7.png)
 1. Enter your CSU-specific credentials
-  - ![Institution credentials](/images/batch-jobs/gettingaccess7.png)
+  - ![Institution credentials](/images/batch-jobs/getting-access-img-step-8.png)
 1. Click Login
-  - ![Institution Login](/images/batch-jobs/gettingaccess8.png)
+  - ![Institution Login](/images/batch-jobs/getting-access-img-step-9.png)
 1. Complete any multi-factor authentication (if prompted)
-  - ![DUO Push Notification](/images/batch-jobs/gettingaccess9.png)
+  - ![DUO Push Notification](/images/batch-jobs/getting-access-img-step-10.png)
 1. You should now be redirected to the NRP Portal and you should see your randomly selected profile icon in the top right corner
-  - ![Signed into NRP Portal](/images/batch-jobs/gettingaccess10.png)
+  - ![Signed into NRP Portal](/images/batch-jobs/getting-access-img-step-11.png)
 1. Read the [Acceptable Use Policy (AUP)](https://nrp.ai/NRP-AUP.pdf){:target="_blank"}
 1. Read the [Cluster Policies](https://nrp.ai/documentation/userdocs/start/policies/){:target="_blank"}
 
