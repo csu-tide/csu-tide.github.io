@@ -11,7 +11,7 @@ permalink: /usage-guidelines/
 # Usage Guidelines
 
 ## Data Storage
-All users start with **50 GB of storage** within the CSU TIDE JupyterHub ([see campus-specific information otherwise](/jupyterhub/gettingaccess#campus-specific-access)). Users are responsible for managing the storage they've been allocated including deletion of large, unused, and/or temporary files *(e.g. ML model checkpoints, old git repos, virtual environments)*.
+All users start with **75 GB of storage** within the CSU TIDE JupyterHub ([see campus-specific information otherwise](/jupyterhub/gettingaccess#campus-specific-access)). Users are responsible for managing the storage they've been allocated including deletion of large, unused, and/or temporary files *(e.g. ML model checkpoints, old git repos, virtual environments)*.
 
 **If users require more storage** than the default amount, please check out the [Storage Services](/storage-services/) section.
 
@@ -35,13 +35,15 @@ In addition to the usage guidelines above, **all users who publish work that use
 
 > This work used resources available through the National Research Platform (NRP) at the University of California, San Diego. NRP has been developed, and is supported in part, by funding from National Science Foundation, from awards 1730158, 1540112, 1541349, 1826967, 2112167, 2100237, and 2120019, as well as additional funding from community partners.
 
-> This work used resources supported by the National Science Foundation award 2346701.
+> This work used resources provided through TIDE, which is supported by National Science Foundation award 2346701.
 
 ## Citations
 Please also cite the following papers describing the NRP and TIDE infrastructure:
 
-- Weitzel et al. *The National Research Platform: Stretched, Multi-Tenant, Scientific Kubernetes Cluster.* PEARC '25. [https://doi.org/10.1145/3708035.3736060](https://doi.org/10.1145/3708035.3736060){:target="_blank"}
-- Farley, Krick, and Li. *TIDE: Regional GPU Cyberinfrastructure Integrated into the National Research Platform.* PEARC '26. [https://doi.org/10.1145/3785462.3815851](https://doi.org/10.1145/3785462.3815851){:target="_blank"}
+- Derek Weitzel, Ashton Graves, Sam Albin, Huijun Zhu, Frank Würthwein, Mahidhar Tatineni, Dmitry Mishin, John Graham, Elham E. Khoda, Mohammad Firas Sada, Larry Smarr, and Thomas DeFanti. 2025. *The National Research Platform: Stretched, Multi-Tenant, Scientific Kubernetes Cluster.* In *Practice and Experience in Advanced Research Computing 2025 (PEARC ’25)*. Association for Computing Machinery. [https://doi.org/10.1145/3708035.3736060](https://doi.org/10.1145/3708035.3736060){:target="_blank"}
+
+- Michael Farley, Kyle Krick, and Henry Li. 2026. *TIDE: Regional GPU Cyberinfrastructure Integrated into the National Research Platform.* In *Practice and Experience in Advanced Research Computing 2026 (PEARC ’26)*. Association for Computing Machinery. [https://doi.org/10.1145/3785462.3815851](https://doi.org/10.1145/3785462.3815851){:target="_blank"}
+
 
 BibTeX entries:
 
